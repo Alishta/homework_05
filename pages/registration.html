@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoHub - реєстрація</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper-reg">
+        <form method="POST" action="https://fom.in.ua/echo" autocomplete="on" class="form-registration">
+            <fieldset>
+                <legend class="form__heading">Зареєструватися</legend>
+                <p>
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" name="email" required="required" autofocus="autofocus" placeholder="user123@gmail.com">
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <br>
+                    <input type="password" name="password" value="" required="required"  placeholder="*********" autocomplete="off">
+                </p>
+                <p>
+                    <label for="password">Підтвердіть пароль</label>
+                    <br>
+                    <input type="password" name="password" value="" required="required" placeholder="*********">
+                </p>
+                <p>
+                    <input type="submit" name="submit" value="Зареєструватися">
+                </p>
+                <a class="link" href="../index.html" target="_blank">Вже зареєстровані?</a>
+            </fieldset>
+        </form>
+        <div>
+            <a class="link-button" href="search.html" target="_blank">Знайди авто своєї мрії тут!</a>
+        </div>
+    </div>
+</body>
+</html>
