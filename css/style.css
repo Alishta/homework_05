@@ -324,12 +324,37 @@ a:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+    padding: 30px 5%;
+    border: 1px double #00182f;
+    border-radius: 10px;
+    background-color: #ffd4d4;
 }
 
 .container-check__item {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    /* align-items: flex-start; */
     width: 50%;
+}
+
+.button {
+    background-color: #003b46;
+    color: white;
+    padding: 1% 5%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #31516e;
+}
+
+.button[type=reset] {
+    background-color: #fff;
+    color: #00182f;
+}
+
+.button[type=reset]:hover {
+    background-color: #e0e0e0;
 }
