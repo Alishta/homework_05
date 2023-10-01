@@ -1,10 +1,5 @@
 body {
     box-sizing: border-box;
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     position: relative;
     background-image: url('../imgs/back.jpg');
 }
@@ -13,9 +8,21 @@ body {
     background-color: #66a5ad;
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.heading {
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.header__heading {
+    width: 100%;
     font-size: 2.5rem;
     font-weight: 700;
     color: #07575b;
@@ -24,9 +31,24 @@ body {
     padding: 2%;
 }
 
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 70%;
+    margin: 20px 10%;
+}
+
+.logo__img {
+    width: 100%;
+}
+
 .form {
-    float: right;
-    justify-content: center;
+    width: 100%;
     padding: 2% 4%;
 }
 
@@ -80,7 +102,6 @@ input[type=submit]:hover {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-left: 10%;
 }
 
 a:hover {
@@ -94,8 +115,7 @@ a:hover {
 }
 
 .main {
-    margin: 20px 0;
-    clear: both;
+    width: 100%;
 }
 
 .list-heading {
@@ -108,21 +128,21 @@ a:hover {
 }
 
 .ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     padding: 10px 0;
     background-color: #c4dfe6;
 }
 
 .ul__item {
-    margin: 2.7%;
+    display: block;
+    padding: 2.7%;
 }
 
 .img {
-    display: inline;
-    width: 250px;
+    width: 23vw;
 }
 
 .item-price {
@@ -135,9 +155,9 @@ a:hover {
 }
 
 .footer {
+    width: 100%;
     background-color: #fbfbfb;
     text-align: center;
-    margin-bottom: 4px;
 }
 
 .copy {

@@ -10,41 +10,48 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1 class="heading">Обери своє майбутнє авто на AutoHub!</h1>
-            <form method="POST" action="https://fom.in.ua/echo" class="form">
-                <fieldset>
-                    <legend class="form__heading">Вхід на сайт</legend>
+            <h1 class="header__heading">Обери своє майбутнє авто на AutoHub!</h1>
+            <div class="header__container">
+                <div class="logo">
+                    <a href="#">
+                        <img class="logo__img" src="imgs/car.svg" alt="logo">
+                    </a>
+                </div>
+                <form method="POST" action="https://fom.in.ua/echo" class="form">
+                    <fieldset>
+                        <legend class="form__heading">Вхід на сайт</legend>
+                        <p>
+                            <label>
+                                <span>E-mail</span>
+                                <input type="email" name="email" title="Формат даних невірний. Адреса e-mail має містити символ @." required="required" autofocus="autofocus" autocomplete="off" placeholder="user123@gmail.com">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <span>Пароль</span>
+                                <input type="password" name="password" value="" required="required" placeholder="************" autocomplete="off">
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <span>Запам'ятати пароль</span>
+                                <input type="checkbox" name="remember_password" value="" class="checkbox">
+                            </label>
+                        </p>
+                    </fieldset>
+                        <input type="submit" name="submit" value="Увійти">
                     <p>
-                        <label>
-                            <span>E-mail</span>
-                            <input type="email" name="email" title="Формат даних невірний. Адреса e-mail має містити символ @." required="required" autofocus="autofocus" autocomplete="off" placeholder="user123@gmail.com">
-                        </label>
+                        Ще не зареєстровані?
                     </p>
-                    <p>
-                        <label>
-                            <span>Пароль</span>
-                            <input type="password" name="password" value="" required="required" placeholder="************" autocomplete="off">
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <span>Запам'ятати пароль</span>
-                            <input type="checkbox" name="remember_password" value="" class="checkbox">
-                        </label>
-                    </p>
-                </fieldset>
-                    <input type="submit" name="submit" value="Увійти">
-                <p>
-                    Ще не зареєстровані?
-                </p>
-                <a class="link" href="pages/registration.html" target="_blank">
-                    Зареєструватися на AutoHub</a>
-            </form>
-            <article class="article"> 
-                Ласкаво просимо в інтернет-автомагазин "AutoHub" - Bаш    вірний партнер у світі автомобілів! Більше тисячі товарів від перевірених продавців! Швидка доставка та доступні ціни роблять "AutoHub" ідеальним місцем для задоволення вашої потреби в автомобільних товарах. У нас ви знайдете нові та б/у автомобілі різних марок і моделей. Наші експерти готові консультувати вас та допомогти знайти транспорт, який відповідає вашим потребам і бюджету. Фінансові послуги "AutoHub" пропонує гнучкі фінансові рішення, включаючи кредитування та лізинг, щоб допомогти вам придбати автомобіль своєї мрії. Перетворіть свій автомобіль на щось особливе з "AutoHub"! 
-            </article>
-            <a class="link-button" href="pages/search.html" target="_blank">Перейти до пошуку</a>
+                    <a class="link" href="pages/registration.html" target="_blank">
+                        Зареєструватися на AutoHub</a>
+                </form>
+            </div>
         </header>
+        <article class="article"> 
+            Ласкаво просимо в інтернет-автомагазин "AutoHub" - Bаш    вірний партнер у світі автомобілів! Більше тисячі товарів від перевірених продавців! Швидка доставка та доступні ціни роблять "AutoHub" ідеальним місцем для задоволення вашої потреби в автомобільних товарах. У нас ви знайдете нові та б/у автомобілі різних марок і моделей. Наші експерти готові консультувати вас та допомогти знайти транспорт, який відповідає вашим потребам і бюджету. Фінансові послуги "AutoHub" пропонує гнучкі фінансові рішення, включаючи кредитування та лізинг, щоб допомогти вам придбати автомобіль своєї мрії. Перетворіть свій автомобіль на щось особливе з "AutoHub"! 
+        </article>
+        <a class="link-button" href="pages/search.html" target="_blank">Перейти до пошуку</a>
         <main class="main">
             <h2 class="list-heading">Найкращі пропозиції</h2>
             <ul class="ul">
