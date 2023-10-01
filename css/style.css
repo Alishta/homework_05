@@ -1,9 +1,13 @@
+/*for index.html */
+
+/* 1 */
 body {
     box-sizing: border-box;
     position: relative;
     background-image: url('../imgs/back.jpg');
 }
 
+/* 10 */
 .wrapper {
     background-color: #66a5ad;
     width: 90%;
@@ -14,6 +18,7 @@ body {
     align-items: center;
 }
 
+/* 10 */
 .header {
     display: flex;
     flex-direction: column;
@@ -21,6 +26,7 @@ body {
     align-items: center;
 } 
 
+/* 10 */
 .header__heading {
     width: 100%;
     font-size: 2.5rem;
@@ -31,6 +37,7 @@ body {
     padding: 2%;
 }
 
+/* 10 */
 .header__container {
     display: flex;
     flex-direction: row;
@@ -38,20 +45,24 @@ body {
     align-items: center;
 }
 
+/* 10 */
 .logo {
     width: 70%;
     margin: 20px 10%;
 }
 
+/* 10 */
 .logo__img {
     width: 100%;
 }
 
+/* 10 */
 .form {
     width: 100%;
     padding: 2% 4%;
 }
 
+/* 10 */
 .form__heading {
     font-size: 1.5rem;
     font-weight: 700;
@@ -59,12 +70,14 @@ body {
     margin: 1%;
 }
 
+/* 1 */
 label {
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
 }
 
+/* 1 */
 input {
     width: 100%;
     padding: 1% 2%;
@@ -75,6 +88,7 @@ input {
     box-sizing: border-box;
 }
 
+/* 11 */
 input[type=submit] {
     background-color: #003b46;
     color: white;
@@ -85,15 +99,18 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* 21 */
 input[type=submit]:hover {
     background-color: #012b32;
 }
 
+/* 10 */
 .link {
     text-decoration: none;
     color: #003b46;
 }
 
+/* 10 */
 .link-button {
     background-color: #003b46;
     color: white;
@@ -104,20 +121,24 @@ input[type=submit]:hover {
     display: inline-block;
 }
 
+/* 11 */
 a:hover {
     text-decoration: underline;
 }
 
+/* 10 */
 .article {
     display: flex;
     font-size: 1rem;
     padding: 2% 4%;
 }
 
+/* 10 */
 .main {
     width: 100%;
 }
 
+/* 10 */
 .list-heading {
     font-size: 2rem;
     font-weight: 700;
@@ -127,6 +148,7 @@ a:hover {
     text-transform: uppercase;
 }
 
+/* 10 */
 .ul {
     width: 100%;
     display: flex;
@@ -136,34 +158,42 @@ a:hover {
     background-color: #c4dfe6;
 }
 
+/* 10 */
 .ul__item {
     display: block;
     padding: 2.7%;
 }
 
+/* 10 */
 .img {
     width: 23vw;
 }
 
+/* 10 */
 .item-price {
     color: #003b46;
     font-weight: 700;
 }
 
+/* 10 */
 .item-name {
     color: #07575b;
 }
 
+/* 10 */
 .footer {
     width: 100%;
     background-color: #fbfbfb;
     text-align: center;
 }
 
+/* 10 */
 .copy {
     color: #9b9b9b;
 }
 
+/* for registration.html */
+/* 10 */
 .wrapper-reg {
     display: flex;
     align-items: center;
@@ -172,6 +202,7 @@ a:hover {
     position: relative;
 }
 
+/* 10 */
 .form-registration {
     width: 100%;
     padding: 2em;
@@ -182,15 +213,20 @@ a:hover {
     background: #c4dfe6;
 }
 
+/* 10 */
 .form-heading {
     margin: 10%;
     text-transform: uppercase;
 }
 
+/* 10 */
 .links {
     clear: both;
 }
 
+
+/* for search.html */
+/* 10 */
 .form-search {
     padding: 20px 5%;
     color: #00182f;
@@ -199,16 +235,19 @@ a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 10 */
 .checkbox {
     cursor: pointer;
     width: 5%;
 }
 
+/* 23 */
 .checkbox input:checked+span:before {
     content: "on";
     background-color: #006633;
 }
 
+/* 10 */
 .select {
     display: inline-block;
     justify-content: space-between;
@@ -228,14 +267,17 @@ a:hover {
     margin: 10px 0;
 }
 
+/* 20 */
 .select:hover {
     border-color: #69cdcb;
 }
 
+/* 20 */
 .select:focus {
     box-shadow: inset 0 0 0 3px  rgba(0, 5, 9,.3);
 }
 
+/* 11 */
 .select option {
     font-weight: normal;
     /* background-position: left; */
@@ -243,12 +285,14 @@ a:hover {
     color: #00182f;
 }
 
+/* 10 */
 .category-heading {
     display: inline-block;
     justify-content: space-between;
     font-size: 1rem;
 }
 
+/* 10 */
 .type-number {
     display: inline;
     /* align-items: center; */
@@ -256,6 +300,7 @@ a:hover {
     width: 20%;
 }
 
+/* 10 */
 .links {
     margin: 10px 5%;
     text-align: center;
