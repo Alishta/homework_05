@@ -132,6 +132,7 @@ input[type=submit]:hover {
     display: inline-block;
 }
 
+/* 1 */
 a {
     text-decoration: none;
 }
@@ -236,7 +237,6 @@ a:hover {
     text-transform: uppercase;
 }
 
-
 /* for search.html */
 /* 10 */
 .form-search {
@@ -249,16 +249,34 @@ a:hover {
 }
 
 /* 10 */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 30px 5%;
+    border: 1px double #00182f;
+    border-radius: 10px;
+    background-color: #abdcdc ;
+}
+
+.container__item {
+    width: 100%;
+}
+
+/* 10 */
+.category-heading {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+/* 10 */
 .checkbox {
     cursor: pointer;
     width: 10%;
     display: inline;
-}
-
-/* 23 */
-.checkbox input:checked+span:before {
-    content: "on";
-    background-color: #006633;
 }
 
 /* 10 */
@@ -283,54 +301,14 @@ a:hover {
     box-shadow: inset 0 0 0 3px  rgba(0, 5, 9,.3);
 }
 
-/* 11 */
-.select option {
-    font-weight: normal;
-    /* background-position: left; */
-    padding: 200%;
-    color: #00182f;
-}
-
 /* 10 */
-.category-heading {
-    font-family: 'Raleway', sans-serif;
-    display: inline-block;
-    justify-content: space-between;
-    font-size: 1rem;
-}
-
-/* 10 */
-.type-number {
-    display: inline-block;
-    /* align-items: center; */
-    margin: 2% 2% 2% 0;
-}
-
-/* 10 */
-.links {
-    margin: 10px 5%;
-    text-align: center;
-}
-
-.container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    padding: 30px 5%;
-    border: 1px double #00182f;
-    border-radius: 10px;
-    background-color: #abdcdc ;
-}
-
 .container__block {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
 
+/* 10 */
 .container-check {
     display: flex;
     flex-direction: row;
@@ -342,12 +320,14 @@ a:hover {
     background-color: #ffd4d4;
 }
 
+/* 10 */
 .container-check__item {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
+/* 10 */
 .button {
     background-color: #003b46;
     color: white;
@@ -357,16 +337,29 @@ a:hover {
     border-radius: 5px;
 }
 
+/* 20 */
 .button:hover {
     cursor: pointer;
     background-color: #31516e;
 }
 
+/* 20 */
 .button[type=reset] {
     background-color: #fff;
     color: #00182f;
 }
 
+/* 30 */
 .button[type=reset]:hover {
     background-color: #e0e0e0;
+}
+
+/* 10 */
+.links {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 5%;
+    text-align: center;
 }
