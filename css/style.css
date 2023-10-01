@@ -90,6 +90,7 @@ input {
 
 /* 11 */
 input[type=submit] {
+    display: inline-block;
     background-color: #003b46;
     color: white;
     padding: 1% 2%;
@@ -224,6 +225,7 @@ a:hover {
 /* for search.html */
 /* 10 */
 .form-search {
+    width: 100%;
     padding: 20px 5%;
     color: #00182f;
     background-color: #c4dfe6;
@@ -234,7 +236,8 @@ a:hover {
 /* 10 */
 .checkbox {
     cursor: pointer;
-    width: 5%;
+    width: 10%;
+    display: inline;
 }
 
 /* 23 */
@@ -245,21 +248,17 @@ a:hover {
 
 /* 10 */
 .select {
-    display: inline-block;
-    justify-content: space-between;
-    font-size: 1rem; 
-    font-family: sans-serif; 
-    font-weight: 700; 
+    /* justify-content: space-between; */
+    /* font-size: 1rem;  */
+    /* font-family: sans-serif;  */
+    /* font-weight: 700;  */
     color: #444; 
     line-height: 1.3; 
     padding: 1%; 
-    width: 20%; 
-    max-width: 100%; 
-    box-sizing: border-box; 
     margin: 0; 
     border: 2px solid #012b32;
     box-shadow: 3px 3px  rgba(0, 5, 9,.3); 
-    border-radius: 5%;
+    border-radius: 5px;
     margin: 10px 0;
 }
 
@@ -290,10 +289,9 @@ a:hover {
 
 /* 10 */
 .type-number {
-    display: inline;
+    display: inline-block;
     /* align-items: center; */
     margin: 2% 2% 2% 0;
-    width: 20%;
 }
 
 /* 10 */
@@ -302,11 +300,36 @@ a:hover {
     text-align: center;
 }
 
-/* .container {
-    width: 70%;
+.container {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-} */
+    margin: 10px 0;
+    padding: 30px 5%;
+    border: 1px double #00182f;
+    border-radius: 10px;
+    background-color: #abdcdc ;
+}
 
+.container__block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.container-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.container-check__item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    width: 50%;
+}

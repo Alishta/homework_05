@@ -13,152 +13,160 @@
         <fieldset>
             <legend class="header__heading">Категорії</legend>
             <div class="container">
-                <label for="body-type" class="category-heading">Оберіть тип кузова авто</label>
-                <br>
-                <select name="body-type" class="select" id="body-type">
-                    <option value="any_type">Будь-який</option>
-                    <option selected="selected" value="sedan">Седан</option>
-                    <option value="universal">Універсал</option>
-                    <option value="hatchback">Хетчбек</option>
-                    <option value="suv">Позашляховик</option>
-                </select>
+                <div class="container__item">
+                    <label for="body-type" class="category-heading">Оберіть тип кузова авто</label>
+                    <br>
+                    <select name="body-type" class="select" id="body-type">
+                        <option value="any_type">Будь-який</option>
+                        <option selected="selected" value="sedan">Седан</option>
+                        <option value="universal">Універсал</option>
+                        <option value="hatchback">Хетчбек</option>
+                        <option value="suv">Позашляховик</option>
+                    </select>
+                </div>
+                <div class="container__item">
+                    <label for="brend" class="category-heading">Оберіть марку авто</label>
+                    <br>
+                    <select name="brend" class="select" id="brend">
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Mazda">Mazda</option>
+                        <option value="Tavria Nova">Tavria Nova</option>
+                        <option value="Tesla">Tesla</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Volvo">Volvo</option>
+                    </select>
+                </div>
+                <div class="container__item">
+                    <label for="country" class="category-heading">Оберіть країну-виробника</label>
+                    <br>
+                    <select name="country" class="select" id="country">
+                        <option selected="selected" value="USA">США</option>
+                        <option value="South Korea">Південна Корея</option>
+                        <option value="Germany">Німеччина</option>
+                        <option value="Ukraine">Україна</option>
+                        <option value="Sweden">Швеція</option>
+                        <option value="Japan">Японія</option>
+                    </select>
+                </div>
             </div>
             <div class="container">
-                <label for="brend" class="category-heading">Оберіть марку авто</label>
-                <br>
-                <select name="brend" class="select" id="brend">
-                    <option value="Audi">Audi</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Hyundai">Hyundai</option>
-                    <option value="Mazda">Mazda</option>
-                    <option value="Tavria Nova">Tavria Nova</option>
-                    <option value="Tesla">Tesla</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                    <option value="Volvo">Volvo</option>
-                </select>
+                <div class="container__block">
+                    <label for="price-from">
+                        <span>Ціна, від $</span>
+                        <input type="number" class="type-number" id="price-from" name="price-from" min="1000" max="100000" placeholder="1000">
+                    </label>
+                    <label for="price-to">
+                        <span>Ціна, до $</span>
+                        <input type="number" class="type-number" id="price-to" name="price-to" min="1000" max="100000" placeholder="100000">
+                    </label>
+                </div>
+                <div class="container__block">
+                    <label for="year-from">
+                        <span>Рік випуску, від</span>
+                        <input type="number" id="year-from" name="year-from" min="2010" max="2023" placeholder="2010" class="type-number">
+                    </label>
+                    <label for="year-to">
+                        <span>Рік випуску, до</span>
+                        <input type="number" id="year-to" name="year-to" min="2010" max="2023" placeholder="2023" class="type-number">
+                    </label>   
+                </div>
             </div>
-            <div class="container">
-                <label for="country" class="category-heading">Оберіть країну-виробника</label>
-                <br>
-                <select name="country" class="select" id="country">
-                    <option selected="selected" value="USA">США</option>
-                    <option value="South Korea">Південна Корея</option>
-                    <option value="Germany">Німеччина</option>
-                    <option value="Ukraine">Україна</option>
-                    <option value="Sweden">Швеція</option>
-                    <option value="Japan">Японія</option>
-                </select>
-            </div>
-            <div class="container">
-                <label for="price-from">
-                    <span>Ціна, від $</span>
-                    <input type="number" class="type-number" id="price-from" name="price-from" min="1000" max="100000" placeholder="1000">
-                </label>
-                <label for="price-to">
-                    <span>Ціна, до $</span>
-                    <input type="number" class="type-number" id="price-to" name="price-to" min="1000" max="100000" placeholder="100000">
-                </label>
-            </div>
-            <div class="container">
-                <label for="year-from">
-                    <span>Рік випуску, від</span>
-                    <input type="number" id="year-from" name="year-from" min="2010" max="2023" placeholder="2010" class="type-number">
-                </label>
-                <label for="year-to">
-                    <span>Рік випуску, до</span>
-                    <input type="number" id="year-to" name="year-to" min="2010" max="2023" placeholder="2023" class="type-number">
-                </label>   
-            </div>
-            <div class="container">
-                <label class="category-heading">Оберіть стан авто</label>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="new" value="new">
-                        <span>Нова</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="used" value="used">
-                        <span>Вживана</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="car loan" value="car loan">
-                        <span>В кредиті</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="uncleared" value="uncleared">
-                        <span>Нерозмитнена</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="battered" value="battered">
-                        <span>Бита</span>
-                    </label>
-                </p>
+            <div class="container-check">
+                <div class="container-check__item">
+                    <label class="category-heading">Оберіть стан авто</label>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="new" value="new">
+                            <span>Нова</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="used" value="used">
+                            <span>Вживана</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="car loan" value="car loan">
+                            <span>В кредиті</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="uncleared" value="uncleared">
+                            <span>Нерозмитнена</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="battered" value="battered">
+                            <span>Бита</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="container-check__item">
+                    <label class="category-heading">Додатково</label>
+                    <br>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="sunroof" value="sunroof">
+                            <span>Люк</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="leather interior" value="leather interior">
+                            <span>Шкіряний салон</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" class="checkbox" name="climate control" value="climate control">
+                            <span>Клімат-контроль</span>
+                        </label>
+                    </p>
+                </div>
             </div>
             <!-- <br> -->
             <div class="container">
-                <label for="fuel-type" class="category-heading">Оберіть тип палива</label>
-                <br>
-                <select name="fuel-type" class="select" id="fuel-type">
-                    <option value="any_type">Будь-який</option>
-                    <option selected="selected" value="petrol">Бензин</option>
-                    <option value="propane">Пропан</option>
-                    <option value="electric">Електромобіль</option>
-                    <option value="hybrid">Гібрид</option>
-                </select>
-            </div>
-            <div class="container">
-                <label for="kpp-type" class="category-heading">Оберіть тип коробки передач</label>
-                <br>
-                <select name="kpp-type" class="select" id="kpp-type">
-                    <option value="any_type">Будь-який</option>
-                    <option selected="selected" value="auto">Автомат</option>
-                    <option value="manual">Механіка</option>
-                    <option value="robo">Роботизована</option>
-                </select>
-            </div>
-            <div class="container">
-                <label for="color" class="category-heading">Оберіть колір авто</label>
-                <br>
-                <select name="color" class="select" id="color">
-                    <option value="any_type">Будь-який</option>
-                    <option selected="selected" value="black">Чорний</option>
-                    <option value="white">Білий</option>
-                    <option value="red">Червоний</option>
-                    <option value="blue">Синій</option>
-                    <option value="yellow">Жовтий</option>
-                </select>
-            </div>
-            <div class="container">
-                <label class="category-heading">Додатково</label>
-                <br>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="sunroof" value="sunroof">
-                        <span>Люк</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="leather interior" value="leather interior">
-                        <span>Шкіряний салон</span>
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="checkbox" name="climate control" value="climate control">
-                        <span>Клімат-контроль</span>
-                    </label>
-                </p>
+                <div class="container__item">
+                    <label for="fuel-type" class="category-heading">Оберіть тип палива</label>
+                    <br>
+                    <select name="fuel-type" class="select" id="fuel-type">
+                        <option value="any_type">Будь-який</option>
+                        <option selected="selected" value="petrol">Бензин</option>
+                        <option value="propane">Пропан</option>
+                        <option value="electric">Електромобіль</option>
+                        <option value="hybrid">Гібрид</option>
+                    </select>
+                </div>
+                <div class="container__item">
+                    <label for="kpp-type" class="category-heading">Оберіть тип коробки передач</label>
+                    <br>
+                    <select name="kpp-type" class="select" id="kpp-type">
+                        <option value="any_type">Будь-який</option>
+                        <option selected="selected" value="auto">Автомат</option>
+                        <option value="manual">Механіка</option>
+                        <option value="robo">Роботизована</option>
+                    </select>
+                </div>
+                <div class="container__item">
+                    <label for="color" class="category-heading">Оберіть колір авто</label>
+                    <br>
+                    <select name="color" class="select" id="color">
+                        <option value="any_type">Будь-який</option>
+                        <option selected="selected" value="black">Чорний</option>
+                        <option value="white">Білий</option>
+                        <option value="red">Червоний</option>
+                        <option value="blue">Синій</option>
+                        <option value="yellow">Жовтий</option>
+                    </select>
+                </div>
             </div>
             <div class="container">
                 <p>
