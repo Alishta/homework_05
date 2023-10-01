@@ -64,6 +64,9 @@ body {
 .form {
     width: 100%;
     padding: 2% 4%;
+    margin: 2%;
+    background-color: #d4e8f9;
+    border-radius: 10px;
 }
 
 /* 10 */
@@ -112,6 +115,8 @@ input[type=submit]:hover {
 
 /* 10 */
 .link {
+    font-weight: 700;
+    letter-spacing: .1rem;
     text-decoration: none;
     color: #003b46;
 }
